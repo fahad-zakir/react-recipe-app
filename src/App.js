@@ -6,7 +6,7 @@ import Form from"./components/Form";
 class App extends Component {
   // this is for the Api call getRecipe
   // we will pass this data of getRecipe below using this.getRecipe
-  // this on line 19 refers to the app component and .getRecipe is for that data
+  // this on linee 24 (Form) refers to the app component and .getRecipe is for that data
   // recipeName is that name value from form, e. means we can read the property from it. elements.value to access it's value
   // we will console.log recipeName (const) and you will see what is typed in the search
   getRecipe = (e) => {
@@ -28,3 +28,6 @@ class App extends Component {
 }
 
 export default App;
+
+// In the form component getRecipe is the props (we chose getRecipe as the name)
+// this.getRecipe, the dot notation passes the data
